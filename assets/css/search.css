@@ -1,0 +1,59 @@
+.search-container {
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(68, 49, 49);
+    margin: 10%;
+    padding: 1%;
+}
+
+.search-img-cont {
+    width: 200px;
+    height: 110px;
+    border-radius: 50%;
+    border: 1px solid rgb(68, 49, 49);
+    padding: 1%;
+    margin: 1%;
+    box-shadow: 10px 0px 20px -25px rgb(0,0,0,0.5);
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2%;
+}
+
+.search-title {
+    color: rgb(68, 49, 49);
+}
+
+.search-price {
+    color: rgb(68, 49, 49);
+}
+
+.quan-container {
+    width: 5%;
+    padding: 1%;
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prod-quantity {
+border-radius: 5px;
+width: 10%;
+}
+
+.prod-btn {
+    width: 4em;
+    color: rgb(68, 49, 49);
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #fff;
+   
+}
