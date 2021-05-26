@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drugstore Co.</title>
+    <!-- aca linkeo a font-awesome -->
+    <script
+      src="https://kit.fontawesome.com/9c540da863.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- aca linkeo a google fonts source sans pro-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <!-- aca linkeo a css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/carrito.css" /> -->
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <link rel="stylesheet" href="./assets/css/search.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="header-content1">
+        <!-- nav superior -->
+        <nav class="nav1" id="nav1">
+          <ul id="shop">
+            <span class="hide"
+              ><li>
+                <a
+                  href="https://www.sweetpetescandy.com/collections/shop"
+                  target="_blank"
+                  title="Visit us at Hersheys.com"
+                  >theDRUGSTOREcompany.COM</a
+                >
+              </li></span
+            >
+            <span class="mobile1"><li>ENVIOS GRATIS A PARTIR DE $300-</li></span>
+            <span class="mobile"
+              ><li>
+                <a href=""><i class="far fa-user-circle nav1-icon"></i></a>
+                INGRESAR/REGISTRARSE
+              </li></span
+            >
+            <span class="mobile"
+              ><li>
+                <a href=""><i class="far fa-heart nav1-icon"></i></a> LISTA DE DESEOS
+              </li></span
+            >
+            <li>
+              <a href="./assets/html/carrito.html"
+                ><i class="fas fa-shopping-cart icon-color nav1-icon"></i></a
+              >MI CARRITO
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- nav principal -->
+      <div class="header-content2">
+        
+        <div class="logo" id="logo">
+          <h1>The DRUG<b>STORE</b> Company</h1>
+        </div>
+
+        <div class="menu" id="show-menu">
+          <nav class="nav2" id="nav2">
+            <ul>
+              <li><a href="#">Regalos</a></li>
+              <li><a href="#products">Categorias</a></li>
+              <li><a href="#brands">Marcas</a></li>
+              <li><a href="#">Ofertas</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Buscador Search -->
+        <div class="search" id="ctn-icon-search">
+          <i class="fas fa-search fa-2x search-icon" id="icon-search"></i>
+        </div>
+
+      </div>
+
+      <!-- pego el icono de menu hamburguesa -->
+      <div id="icon-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <!-- Buscador Search barra desplegabe -->
+
+    <div id="ctn-bars-search">
+      <a href="./assets/html/search.html"></a><input type="text" placeholder="  SEARCH" id="inputSearch" />
+    </div>
+  <!-- ejemplo que estara comentado desde aca-->
+    <div class="search-container" id="search-container">
+      <!-- <div class="prod-img-cont" id="prod-img-cont">
+      <img src="" alt="">
+      </div>
+      
+      <div class="prod-title" id="prod-title">
+          <h2>prod-title</h2>
+      </div>
+      
+      <div class="prod-price">
+          <h2>prod-price</h2>
+      </div>
+      
+      <div class="prod-quantity" id="prod-quantity">
+      <input type="text" id="input-quantity">
+      </div>
+      
+      <div class="prod-btn" id="prod-btn">
+          <button>Agregar</button>
+      </div> -->
+          </div>
+
+          <!-- hasta aca -->
+
+          <!-- dejo comentados los articulos del buscador por ahora -->
+    <!-- <ul id="box-search">
+    
+      <li>
+        <a href="#alfajor"><i class="fas fa-search fa-2x search-icon" id="alfa"></i>ALFAJORES</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-search fa-2x search-icon" id="chupe"></i>CHUPETINES</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-search fa-2x search-icon" id="galle"></i>GALLETITAS</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-search fa-2x search-icon" id="choco"></i>CHOCOLATES</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-search fa-2x search-icon" id="chi"></i>CHICLES</a>
+      </li>  
+      <li>
+        <a href="#"><i class="fas fa-search fa-2x search-icon" id="sna"></i>SNACKS</a>
+      </li> 
+    </ul> -->
+
+    <!-- Creo la barra desplegable del buscador -->
+
+    <div id="back-ctn-search">
+
+    </div>
+
+
+    <!-- Genero un contenedor de todo el contenido, para poder moverlo a un lado cuando es mobile, asi baja el desplegable.  Lo hago desde js en menu.js -->
+    <div class="container-all" id="move-content">
+      
+      
+      <main role="main">
+        <!-- Banner estatico o Carroussel  -->
+
+        <section class="banner">
+          <div class="container-banner">
+            <div class="find-your-favorite">
+              <h1>ENCONTRA TU FAVORITO</h1>
+            </div>
+
+            <div class="banner-img">
+              <!-- la imagen la coloco desde css -->
+            </div>
+          </div>
+        </section>
+
+        <section class="products" id="products">
+          <div class="container-products">
+            <div class="products-title">
+              <h2>Nuestros Productos</h2>
+            </div>
+
+            <div class="img-products-container">
+              <div class="alfajor-img">
+                <img src="./assets/images/PRODUCTS.01.jpeg" alt="Alfajor" />
+              </div>
+
+              <div class="chupetin-img">
+                <img src="./assets/images/PRODUCTS.02.jpeg" alt="Chupetin" />
+              </div>
+
+              <div class="galletitas-img">
+                <img src="./assets/images/PRODUCTS.003.jpeg" alt="Galletitas" />
+              </div>
+
+              <div class="chocolate-img">
+                <img src="./assets/images/PRODUCTS.04.jpeg" alt="Chocolates" />
+              </div>
+
+              <div class="chicle-img">
+                <img src="./assets/images/PRODUCTS.05.jpeg" alt="Chicles" />
+              </div>
+
+              <div class="snack-img">
+                <img src="./assets/images/PRODUCTS.06.jpeg" alt="Snacks" />
+              </div>
+            </div>
+
+            <div class="shop-link">
+              <a href="./assets/html/shop-all.html">MOSTRAR TODOS</a>
+            </div>
+
+            <div id="allProducts" class="allProducts">
+              <div class="alfajor">
+                <button id="alfajor">Alfajores</button>
+              </div>
+              <div class="chupetin">
+                <button id="chupetin">Chupetines</button>
+              </div>
+              <div class="galletita">
+                <button id="galletita">Galletitas</button>
+              </div>
+              <div class="chocolate">
+                <button id="chocolate">Chocolates</button>
+              </div>
+              <div class="chicle">
+                <button id="chicle">Chicles</button>
+              </div>
+              <div class="snack">
+                <button id="snack">Snacks</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+         <!-- Genero un contenedor de todo el contenido, para poder moverlo a un lado cuando lo llamo, asi baja el desplegable.  Lo hago desde js en menu.js -->
+
+        <section class="products-called" id="products-called">
+          <div class="container" id="container">
+            <!-- <img src="https://www.zanettigolosinas.com.ar/wp-content/uploads/2021/04/77905741.jpg" alt="" id="1" />
+        <h2 class="titulo">Alfajor Jorgito Negro</h2>
+        <p>Precio: $100-</p>
+        <p>Disponibilidad: En stock</p>
+        <p>Disponibilidad: Sin stock</p>
+        <div>
+          <label for="quantity">Cantidad:</label>
+          <input type="text" id="quantity" class="quantity">
+          <input type="submit" value="Añadir al carrito" id="quantity-btn"> -->
+          </div>
+        </section>
+      </main>
+
+      <div class="container-footer">
+        <footer>
+          <div class="logo-footer">
+            <div class="logo-footer-circle">
+              <p>the</p>
+              <p>DRUG<b>STORE</b></p>
+              <p>co.</p>
+            </div>
+            <!-- logo!! -->
+          </div>
+
+          <div class="redes-footer">
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank"
+              ><i
+                class="
+                  fab
+                  fa-instagram
+                  iconos
+                  fa
+                  icon-color icon-redes-footer
+                  ig
+                "
+              ></i
+            ></a>
+            <a href="https://twitter.com/?lang=es" target="_blank"
+              ><i class="fab fa-twitter fa icon-color icon-redes-footer tw"></i>
+            </a>
+
+            <a href="https://es-la.facebook.com/" target="_blank"
+              ><i class="fab fa-facebook-f icon-color icon-redes-footer"></i
+            ></a>
+          </div>
+
+          <hr />
+          <h4>© 2021— The DrugStore Company DO NOT SELL MY INFO</h4>
+        </footer>
+      </div>
+    </div>
+
+    <script src="./assets/js/index.js" type="module"></script>
+    <!-- <script src="./assets/js/carrito.js"></script> -->
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/search.js"></script>
+   
+  </body>
+</html>

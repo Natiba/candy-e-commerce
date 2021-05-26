@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- aca linkeo a google fonts source sans pro-->
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap"
+        rel="stylesheet"
+      />
+    <!-- <link rel="stylesheet" href="../css/style.css" /> -->
+    <title>Carrito</title>
+    <link rel="stylesheet" href="../css/carrito.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="titulo1">CARRITO DE COMPRA</h1>
+    </header>
+
+    <main class="formulario" id="form">
+      <div class="carrito-container">
+        <div id="total" class="total">
+          <h2>El total de su compra es:</h2>
+        </div>
+<div class="datos">
+        <h2 class="titulo">
+          Ingrese sus datos personales para avanzar con la compra
+        </h2>
+    </div>
+
+        <div class="datos-container">​
+
+        <div>
+          <label for="name">Nombre:</label>
+          <input
+            type="text"
+            id="input_nombre"
+            class="nombre"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="apellido">Apellido</label>
+          <input
+            type="text"
+            
+            id="apellido"
+            class="lastname"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="direccion">Direccion:</label>
+          <input
+            type="text"
+           
+            id="direccion"
+            class="direction"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            
+            id="email"
+            class="mail"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="telefono">Telefono de contacto</label>
+          <input
+            type="tel"
+            
+            id="telefono"
+            class="phone"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <input type="submit" value="Enviar" id="btnSend" class="btn-send-carrito1"/>
+        </div>
+      </div>
+    </div>
+        
+    </main>
+    ​ ​ ​ ​
+    <script src="../js/carrito.js" type="module"></script>
+  </body>
+</html>
