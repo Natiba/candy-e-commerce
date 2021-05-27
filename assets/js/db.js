@@ -164,5 +164,15 @@ const products = [
       image: './assets/images/lays-provoleta.jpg'
     },
   ];
+
+  products.forEach((element) => {
+
+    if (products.name < producto) {
+      
+    }
+    
+  })
+  
+  console.log(products)
     
     export default products;

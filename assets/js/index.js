@@ -75,11 +75,39 @@ const getProducts = (categoria) => {
 
         
 
+ 
+
+
         let btnPurchase = document.createElement("button"); // Crea un botón
         btnPurchase.setAttribute("id", `btn_${product.id}`); // Le da una ID
         btnPurchase.textContent = "Agregar al carrito"; // Le da un contenido en forma de texto
         btnPurchase.setAttribute("class", "container-prods-btn");
         container.appendChild(btnPurchase); //insertamos en el container ese botón
+
+        let btnRemove = document.createElement("button"); // Crea un botón
+        btnRemove.setAttribute("id", `btn_${product.id}`); // Le da una ID
+        btnRemove.textContent = "Quitar del carrito"; // Le da un contenido en forma de texto
+        btnRemove.setAttribute("class", "container-prods-btn");
+        container.appendChild(btnRemove); //insertamos en el container ese botón
+
+        btnRemove.addEventListener("click", () => {
+          // Al botón le asignamos un evento de escucha
+
+          // let subtotal = product.price * cantidad.value; // Cantidad * precio
+          
+          // console.log(getLocalStorage);
+          // if (getLocalStorage) {
+          //   total = Number(getLocalStorage) + Number(subtotal);
+          //   console.log(total);
+          // }
+          // // total += subtotal;
+          // console.log(total);
+          // localStorage.setItem("total", total);
+          /* aca llamamos con la funcion para que nos diga que producto agregamos */
+          localStorage.setItem('total', product.price);
+          remCallback(product.name) 
+        });
+
 
         btnPurchase.addEventListener("click", () => {
           // Al botón le asignamos un evento de escucha
@@ -94,7 +122,8 @@ const getProducts = (categoria) => {
           // total += subtotal;
           console.log(total);
           localStorage.setItem("total", total);
-          /*  */
+          /* aca llamamos con la funcion para que nos diga que producto agregamos */
+          addCallback(product.name) 
         });
       } else {
         let p = document.createElement("p");
@@ -103,4 +132,18 @@ const getProducts = (categoria) => {
       }
     }
   });
+
+
 };
+
+// agregamos funcion callback 
+
+function addCallback(callback) {
+  alert(`Ha añadido ${callback}`);
+}
+
+function remCallback(callback) {
+  alert(`Ha quitado el producto ${callback}`);
+}
+
+function one()
